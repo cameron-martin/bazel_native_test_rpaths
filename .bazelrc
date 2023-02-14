@@ -1,0 +1,9 @@
+common --experimental_cc_shared_library
+
+build:hermetic --experimental_use_hermetic_linux_sandbox
+build:hermetic --sandbox_add_mount_pair=/lib:/lib
+build:hermetic --sandbox_add_mount_pair=/usr:/usr
+build:hermetic --sandbox_add_mount_pair=/lib64:/lib64
+build:hermetic --sandbox_add_mount_pair=/bin:/bin
+build:hermetic --sandbox_add_mount_pair=/proc:/proc
+build:hermetic --sandbox_add_mount_pair=/etc/alternatives:/etc/alternatives
